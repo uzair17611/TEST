@@ -8,7 +8,7 @@ const router = express.Router();
 // router.post("/getUrlData", getUrlData);
 router.post('/signUp', signUp);
 router.post('/login', SignIn);
-router.post('/refresh-dtoken',auth, refreshAccessToken);
+router.post('/refresh-token',auth, refreshAccessToken);
 // router.post('/forget-password/send-email', forgetPasswordStepOne);
 // router.post('/forget-password/verify-code', forgetPasswordStepTwo);
 // router.post('/forget-password/reset-password', resetPassword);

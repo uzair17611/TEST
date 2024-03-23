@@ -39,8 +39,9 @@ const allowedOrigins = [
     "https://attract-game-admin-panel.vercel.app",
     "http://localhost:5173",
     "https://noahai.ai",
-    "http://localhost:3000"
-
+    "http://localhost:3000",
+    "https://test1-rouge-phi.vercel.app", 
+    "*" 
 ];
 
 app.use(cors({
@@ -68,7 +69,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // ---Routes---
 
-app.use('/api/', Login);
+app.use('/api', Login);
 
 
 
